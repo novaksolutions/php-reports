@@ -342,14 +342,14 @@ class PhpReports {
 		return '['.trim(implode(',',$parts),',').']';
 	}
 
-	protected static function getReportHeaders($report) {
+	protected static function getReportHeaders($report, $base) {
 		$cacheKey = FileSystemCache::generateCacheKey($report,'report_headers');
 
 		//check if report data is cached and newer than when the report file was created
 		//the url parameter ?nocache will bypass this and not use cache
 		$data =false;
 		if(!isset($_REQUEST['nocache'])) {
-			$data = FileSystemCache::retrieve($cacheKey, filemtime($report));
+			$data = FileSystemCache::retrieve($cacheKey, filemtime($base . $report));
 		}
 
 		//report data not cached, need to parse it
