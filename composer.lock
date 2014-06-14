@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "33e635b6d5b3d59c7038d16d3b5331c8",
+    "hash": "79b6b479f3a599f83db9488880e48808",
     "packages": [
         {
             "name": "adodb/adodb-php",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cvele/adodb.git",
-                "reference": "66f3740cf7718a4cd88bb1a2a05cceaccc98b882"
+                "url": "https://github.com/ADOdb/ADOdb.git",
+                "reference": "50b6e3a7fb0222aae945ffe32b94448076b773ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cvele/adodb/zipball/66f3740cf7718a4cd88bb1a2a05cceaccc98b882",
-                "reference": "66f3740cf7718a4cd88bb1a2a05cceaccc98b882",
+                "url": "https://api.github.com/repos/ADOdb/ADOdb/zipball/50b6e3a7fb0222aae945ffe32b94448076b773ac",
+                "reference": "50b6e3a7fb0222aae945ffe32b94448076b773ac",
                 "shasum": ""
             },
             "require": {
@@ -36,10 +36,20 @@
             "authors": [
                 {
                     "name": "John Lim",
-                    "homepage": "http://adodb.sourceforge.net/#docs"
+                    "email": "jlim@natsoft.com",
+                    "role": "Author"
+                },
+                {
+                    "name": "Damien Regad",
+                    "role": "Current maintainer"
                 }
             ],
-            "time": "2013-01-04 11:54:13"
+            "description": "ADOdb is a PHP database abstraction layer library",
+            "homepage": "http://adodb.sourceforge.net/",
+            "keywords": [
+                "database"
+            ],
+            "time": "2014-05-20 15:35:49"
         },
         {
             "name": "jdorn/file-system-cache",
@@ -94,12 +104,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jdorn/sql-formatter.git",
-                "reference": "51a660e97b59f91b814eeee6e0a38e3cd726dd30"
+                "reference": "ebeb18ffd93454572a829bb43c5ca8c3318c3d63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/51a660e97b59f91b814eeee6e0a38e3cd726dd30",
-                "reference": "51a660e97b59f91b814eeee6e0a38e3cd726dd30",
+                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/ebeb18ffd93454572a829bb43c5ca8c3318c3d63",
+                "reference": "ebeb18ffd93454572a829bb43c5ca8c3318c3d63",
                 "shasum": ""
             },
             "require": {
@@ -108,6 +118,9 @@
             "require-dev": {
                 "phpunit/phpunit": "3.7.*"
             },
+            "bin": [
+                "bin/sql-formatter"
+            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -136,7 +149,7 @@
                 "highlight",
                 "sql"
             ],
-            "time": "2013-09-18 14:43:47"
+            "time": "2014-06-05 15:00:04"
         },
         {
             "name": "lespoilus/spyc",
@@ -187,10 +200,10 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/mikecao/flight.git",
-                "reference": "d0818793794a36a55741771675ad573fa59cd568"
+                "reference": "bd0c9474553bccb8a40c09ada703c6345e71b4ac"
             },
             "type": "library",
-            "time": "2012-12-13 18:22:51"
+            "time": "2014-05-23 07:22:53"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -198,16 +211,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PHPExcel.git",
-                "reference": "555a4ab828d84ec720ae2cf9dd3862010c5653f3"
+                "reference": "0ce009a4d428a7f1f4a6057cc6848c57dc923de3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/555a4ab828d84ec720ae2cf9dd3862010c5653f3",
-                "reference": "555a4ab828d84ec720ae2cf9dd3862010c5653f3",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/0ce009a4d428a7f1f4a6057cc6848c57dc923de3",
+                "reference": "0ce009a4d428a7f1f4a6057cc6848c57dc923de3",
                 "shasum": ""
             },
             "require": {
                 "ext-xml": "*",
+                "ext-xmlwriter": "*",
                 "php": ">=5.2.0"
             },
             "type": "library",
@@ -246,7 +260,7 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2013-09-15 17:11:48"
+            "time": "2014-06-12 08:42:51"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -254,21 +268,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "c0736a0eb2b95928329a475dcd95b3541bd06428"
+                "reference": "7b048deea4ee9c49c70c40a15f4045f8dff765bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/c0736a0eb2b95928329a475dcd95b3541bd06428",
-                "reference": "c0736a0eb2b95928329a475dcd95b3541bd06428",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/7b048deea4ee9c49c70c40a15f4045f8dff765bc",
+                "reference": "7b048deea4ee9c49c70c40a15f4045f8dff765bc",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
+            "require-dev": {
+                "mockery/mockery": "~0.9.1"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.1-dev"
+                    "dev-master": "5.2-dev"
                 }
             },
             "autoload": {
@@ -283,7 +300,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Chris Corbyn"
@@ -295,7 +314,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2013-09-23 08:26:27"
+            "time": "2014-06-13 11:45:24"
         },
         {
             "name": "twig/twig",
@@ -303,12 +322,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "f23031a8e5fc1eb077334baa010b965dcf3d6566"
+                "reference": "1c0bec2814a078a81fb86dbc38798bf73418f839"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/f23031a8e5fc1eb077334baa010b965dcf3d6566",
-                "reference": "f23031a8e5fc1eb077334baa010b965dcf3d6566",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/1c0bec2814a078a81fb86dbc38798bf73418f839",
+                "reference": "1c0bec2814a078a81fb86dbc38798bf73418f839",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +336,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.14-dev"
+                    "dev-master": "1.16-dev"
                 }
             },
             "autoload": {
@@ -332,11 +351,19 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Armin Ronacher",
-                    "email": "armin.ronacher@active-4.com"
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "https://github.com/fabpot/Twig/graphs/contributors",
+                    "role": "Contributors"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -344,7 +371,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-10-01 14:20:58"
+            "time": "2014-05-26 15:15:28"
         }
     ],
     "packages-dev": [

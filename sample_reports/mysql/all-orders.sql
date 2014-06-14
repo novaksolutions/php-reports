@@ -17,13 +17,9 @@
 -- }
 
 SELECT
-    order_id as `Order Id`,
-    created_at as `Order Date`,
-    CONCAT(customer_fname, " ", customer_lname) as `Customer Name`,
-    customer_id as `Customer Id`,
-    grand_total as `Grand Total`,
-    status as `Order Status`
+    marketplace_id,
+    item_number
 FROM
-    orders
+    items
 WHERE
-    created_at BETWEEN "{{ range.start }}" AND "{{ range.end }}"
+    created BETWEEN "{{ range.start }}" AND "{{ range.end }}"

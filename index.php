@@ -10,6 +10,10 @@ include 'vendor/autoload.php';
 //sets up autoload (looks in classes/local/, classes/, and lib/ in that order)
 require 'lib/PhpReports/PhpReports.php';
 
+$normalBase = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME']));
+
+//Flight::set("flight.base_url", str_replace('app/webroot/', '', $normalBase));
+
 Flight::route('/',function() {
 	PhpReports::listReports();
 });
