@@ -326,14 +326,14 @@ class PhpReports {
 				//skip if report is marked as ignore
 				if(isset($report['ignore']) && $report['ignore']) continue;
 
-				if(isset($popular[$report['report']])) {
+				if(isset($report['report']) && isset($popular[$report['report']])) {
 					$popularity = $popular[$report['report']];
 				}
 				else $popularity = 0;
 
 				$parts[] = json_encode(array(
 					'name'=>$report['Name'],
-					'url'=>$report['url'],
+					'url'=>isset($report['url']) ? $report['url'] : '',
 					'popularity'=>$popularity
 				));
 			}
